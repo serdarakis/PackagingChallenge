@@ -39,7 +39,7 @@ namespace Com.Mobiquity.Packer.Test
         [Fact]
         public void InputWithMoreItemThenMaxSupportedItemCount_ShouldThrowsApiException()
         {
-            var path = CreateFileWithData(new string [] { InputWithMoreItemThenMaxSupportedItemCount });
+            var path = CreateFileWithData(new string[] { InputWithMoreItemThenMaxSupportedItemCount });
 
             var exception = Record.Exception(() => Packer.Pack(path));
 
@@ -100,7 +100,7 @@ namespace Com.Mobiquity.Packer.Test
         {
             var combinedPath = Path.Combine(path, fileName);
 
-            File.WriteAllLines(combinedPath, data.Select(str => str.Trim()));
+            File.WriteAllLines(combinedPath, data.Select(str => str.Trim()), System.Text.Encoding.UTF8);
 
             return combinedPath;
         }
