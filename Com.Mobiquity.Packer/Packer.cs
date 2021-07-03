@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+using System.IO;
 
 namespace Com.Mobiquity.Packer
 {
@@ -17,8 +17,5 @@ namespace Com.Mobiquity.Packer
         }
     }
 
-    public class ApiException : Exception
-    {
-
-    }
+  
 }
