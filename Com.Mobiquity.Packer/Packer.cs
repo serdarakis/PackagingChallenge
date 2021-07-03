@@ -1,10 +1,10 @@
-﻿using System;
-using System.IO;
+﻿using Com.Mobiquity.Packer.Services;
 
 namespace Com.Mobiquity.Packer
 {
     public static class Packer
     {
+        private static IFileService _fileService = new FileService();
         /// <summary>
         /// 
         /// </summary>
@@ -13,7 +13,10 @@ namespace Com.Mobiquity.Packer
         /// <returns></returns>
         public static string Pack(string filePath)
         {
-            throw new NotImplementedException();
+            if (!_fileService.Exists(filePath))
+                throw new ApiException($"File {filePath} is not exists");
+
+            return "";
         }
     }
 
