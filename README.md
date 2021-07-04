@@ -7,7 +7,7 @@ Mobiquity Packer is a cross platform library that provides an optimized solution
 
 Given a set of items, each with a weight and a value and index, Mobiquity Packer determines the items to include in a collection so that the total weight is less than or equal to a given limit and the total cost is as much as possible. Each thing you put inside the package has such parameters as index number, weight and cost. The package has a weight limit. Mobiquity Packer finds and optimum package with an optimized time.
 
-Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1st number is a item’s index number, the 2nd its weight and the 3rd its cost. **E.g.**
+Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1st number is an item’s index number, the 2nd its weight and the 3rd its cost. **E.g.**
 
 > 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
 
@@ -23,7 +23,7 @@ Format of the file should be in UTF-8 format.  The pack method returns the solut
 ## Implementation
 Application Reads the file and converts the information into the Package Model by parsing each line, calculates the items to pack using an efficient algorithm. Returns items indexes for each line in the input file. In case of any error library throws "APIException".
 
-Package optimization is a known problem with Knapsack problem name. It has a 3 different known algorithm when optimizing the items. These algorithms are Recursion solution and Dynamic Programming solution with Memoization and Tabulation methods.
+Package optimization is a known problem with Knapsack problem name. It has 3 different known algorithm when optimizing the items. These algorithms are Recursion solution and Dynamic Programming solution with Memoization and Tabulation methods.
 
 Since optimization is close to Knapsack problem. Similar algorithm has been used to solve problem. However, since items weights are not integers, Memorization approach was the best solution.  However, small adjustment needs to be done because index is integer and capacity was fractional number.  Hash table has been used instead of a memory array.
 
