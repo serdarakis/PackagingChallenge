@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Mobiquity.Packer", "Com.Mobiquity.Packer\Com.Mobiquity.Packer.csproj", "{3939076D-55A8-4BC0-811A-2ECD1D3F4211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Com.Mobiquity.Packer", "Com.Mobiquity.Packer\Com.Mobiquity.Packer.csproj", "{3939076D-55A8-4BC0-811A-2ECD1D3F4211}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{25B6B6B5-4055-4413-9098-FC34813F1817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Mobiquity.Packer.Test", "Test\Com.Mobiquity.Packer.Test\Com.Mobiquity.Packer.Test.csproj", "{CD4612BB-AE50-4780-8E92-359BC8C1FD2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Com.Mobiquity.Packer.Test", "Test\Com.Mobiquity.Packer.Test\Com.Mobiquity.Packer.Test.csproj", "{CD4612BB-AE50-4780-8E92-359BC8C1FD2D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4BA537D2-FD34-4781-B86E-11AC1B442927}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4BA5
 		Scripts\publish.sh = Scripts\publish.sh
 		Scripts\test.sh = Scripts\test.sh
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleApp", "SampleApp", "{DF9D7378-DAA9-4340-B8DA-B6D2A68F28BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Mobiquity.Packer.SampleApp.ConsoleApp", "SampleApp\Com.Mobiquity.Packer.SampleApp.ConsoleApp\Com.Mobiquity.Packer.SampleApp.ConsoleApp.csproj", "{6FE352DF-244B-4F2A-A759-CC8E157554F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,12 +35,17 @@ Global
 		{CD4612BB-AE50-4780-8E92-359BC8C1FD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD4612BB-AE50-4780-8E92-359BC8C1FD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD4612BB-AE50-4780-8E92-359BC8C1FD2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE352DF-244B-4F2A-A759-CC8E157554F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE352DF-244B-4F2A-A759-CC8E157554F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE352DF-244B-4F2A-A759-CC8E157554F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE352DF-244B-4F2A-A759-CC8E157554F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD4612BB-AE50-4780-8E92-359BC8C1FD2D} = {25B6B6B5-4055-4413-9098-FC34813F1817}
+		{6FE352DF-244B-4F2A-A759-CC8E157554F2} = {DF9D7378-DAA9-4340-B8DA-B6D2A68F28BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F47D4D74-5215-413D-B851-74789F5B8379}
