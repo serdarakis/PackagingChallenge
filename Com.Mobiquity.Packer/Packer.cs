@@ -33,11 +33,11 @@ namespace Com.Mobiquity.Packer
             }
             catch (ArgumentException e)
             {
-                throw new ApiException($"Input format is not acceptable. See inner exception.", e);
+                throw new ApiException("Input format is not acceptable. See inner exception.", e);
             }
             catch (Exception e)
             {
-                throw new ApiException($"Unhandled exception occurred. See inner exception.", e);
+                throw new ApiException("Unhandled exception occurred. See inner exception.", e);
             }
         }
 
