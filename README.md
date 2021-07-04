@@ -7,12 +7,15 @@ Mobiquity Packer is a cross platform library that provides an optimized solution
 
 Given a set of items, each with a weight and a value and index, Mobiquity Packer determines the items to include in a collection so that the total weight is less than or equal to a given limit and the total cost is as much as possible. Each thing you put inside the package has such parameters as index number, weight and cost. The package has a weight limit. Mobiquity Packer finds and optimum package with an optimized time.
 
-Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1stnumber is a item’s index number, the 2ndis its weight and the 3rdis its cost. **E.g.**
+Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1stnumber is a itemâ€™s index number, the 2ndis its weight and the 3rdis its cost. **E.g.**
 
-> 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
-> 8 : (1,15.3,€34)
-> 75 : (1,85.31,€29) (2,14.55,€74) (3,3.98,€16) (4,26.24,€55) (5,63.69,€52) (6,76.25,€75) (7,60.02,€74)
-> 56 : (1,90.72,€13) (2,33.80,€40) (3,43.15,€10) (4,37.97,€16) (5,46.81,€36) (6,48.77,€79) (7,81.80,€45) (8,19.36,€79) (9,6.76,€64)
+> 81 : (1,53.38,â‚¬45) (2,88.62,â‚¬98) (3,78.48,â‚¬3) (4,72.30,â‚¬76) (5,30.18,â‚¬9) (6,46.34,â‚¬48)
+
+> 8 : (1,15.3,â‚¬34)
+
+> 75 : (1,85.31,â‚¬29) (2,14.55,â‚¬74) (3,3.98,â‚¬16) (4,26.24,â‚¬55) (5,63.69,â‚¬52) (6,76.25,â‚¬75) (7,60.02,â‚¬74)
+
+> 56 : (1,90.72,â‚¬13) (2,33.80,â‚¬40) (3,43.15,â‚¬10) (4,37.97,â‚¬16) (5,46.81,â‚¬36) (6,48.77,â‚¬79) (7,81.80,â‚¬45) (8,19.36,â‚¬79) (9,6.76,â‚¬64)
 
 
 Format of the file should be in UTF-8 format.  The pack method returns the solution as a string. Pack method throws an error/exception named APIException (com.mobiquity.packer.APIException where relevant) if any constraints are not met.
