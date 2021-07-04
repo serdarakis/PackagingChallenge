@@ -7,7 +7,7 @@ Mobiquity Packer is a cross platform library that provides an optimized solution
 
 Given a set of items, each with a weight and a value and index, Mobiquity Packer determines the items to include in a collection so that the total weight is less than or equal to a given limit and the total cost is as much as possible. Each thing you put inside the package has such parameters as index number, weight and cost. The package has a weight limit. Mobiquity Packer finds and optimum package with an optimized time.
 
-Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1stnumber is a item’s index number, the 2ndis its weight and the 3rdis its cost. **E.g.**
+Mobiquity Packer accepts a path to a file as its only argument. The input file may contain several lines. Each line is one test case. Each line should contain the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1st number is a item’s index number, the 2nd its weight and the 3rd its cost. **E.g.**
 
 > 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
 
@@ -58,9 +58,10 @@ Afterwards, you can use `Packer.Pack` function as shown. Don't forget to change 
 ## Building Source Code
 -   Clone repository into a related folder.
 -   Project has no dependency. It should be ready to build.
-- You can use your favorite c# IDE to build solution or you can use script in `Scripts` folder.
+- You can use your favorite C# IDE to build solution or you can use script in `Scripts` folder.
 
-Scripts 
+**Scripts**
+
 Scripts folder contains all necessary scripts for compilation, test execution and producing a nuget package. Remember that, you will need <b>dotnet CLI</b> to get it working.
 
  - <b>build.sh</b> will handle all operations. 
